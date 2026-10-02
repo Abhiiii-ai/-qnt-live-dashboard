@@ -12,7 +12,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-BINANCE = "https://api.binance.com"
+BINANCE = "https://data-api.binance.vision"
 SYMBOL = "QNTUSDT"
 
 @st.cache_data(ttl=4, show_spinner=False)
@@ -187,5 +187,5 @@ def live_dashboard():
         st.caption(str(e))
 
 st.title("QNT Live Terminal")
-st.caption("Mobile-friendly cloud dashboard • No laptop required")
+st.caption("Mobile-friendly cloud dashboard • No laptop required • Binance public market data")
 live_dashboard()
